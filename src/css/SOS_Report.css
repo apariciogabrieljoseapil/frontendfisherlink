@@ -1,0 +1,458 @@
+
+
+.print-Btn{
+    margin-top: 20px;
+}
+
+#safeReportModal .div-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 18px;
+    min-height: auto;
+    height: auto;
+}
+
+#safeReportModal .div-box-sub {
+    display: flex;
+    align-items: stretch;
+    gap: 18px;
+    flex: 1 1 auto;
+    height: auto;
+    min-height: 0;
+}
+
+#safeReportModal .div-box-sub .search-input {
+    flex: 1 1 320px;
+    min-width: 220px;
+    min-height: 44px;
+    box-sizing: border-box;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#safeReportModal .div-box-sub-SOS {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    gap: 12px;
+    height: auto;
+    min-height: 0;
+}
+
+#safeReportModal .div-box-sub-SOS > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 0;
+    gap: 12px;
+}
+
+#safeReportModal .div-box-sub-SOS .filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+}
+
+#safeReportModal .modal-content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#safeReportModal .line {
+    flex: 0 0 auto;
+}
+
+#safeReportModal .div-box,
+#safeReportModal .print-Btn {
+    flex: 0 0 auto;
+}
+
+#safeReportModal .div-box + .scrollable-safe-report {
+    margin-top: 12px;
+}
+
+#safeReportTable {
+    max-height: 400px;
+    min-height: 400px;
+}
+.clickable-callsign {
+    /* Blue background */
+    color: rgb(148, 248, 255);
+    /* Remove default border */
+    text-decoration: underline;
+    /* Rounded corners */
+    padding: 6px 12px;
+    /* Inner spacing */
+    cursor: pointer;
+    /* Hand pointer on hover */
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Hover effect */
+.clickable-callsign:hover {
+    color: rgb(255, 255, 255);
+    /* Darker blue */
+}
+
+/* 🧠 Limit dropdown height & make it scrollable */
+
+
+
+
+
+
+.dropdown {
+    width: 120px;
+        font-size: 15px;
+        padding: 5px 12px;
+        background: transparent;
+        border: none;
+        color: rgb(164, 164, 164);
+        max-height: 150px;
+        overflow-y: auto;
+    
+}
+
+
+/* Style Options */
+.dropdown option {
+    padding: 5px 8px;
+    background-color: #fff;
+    color: #333;
+    min-height: 50px;
+    overflow-y: auto;
+    
+}
+
+
+/* 📅 Compact Style for Year Input */
+.yearInput {
+    width: 110px;
+    font-size: 15px;
+    padding: 5px 12px;
+    background: transparent;
+    border: none;
+        color: rgb(164, 164, 164);
+        max-height: 150px;
+        overflow-y: auto;           
+}
+
+.yearInput option {
+    padding: 5px 8px;
+    background-color: #fff;
+    color: #333;
+    min-height: 150px;
+        overflow-y: auto;
+}
+
+
+
+.scrollable-safe-report {
+    display: flex;
+    flex: 1 1 auto;
+    min-height: 0;
+    max-height: 350px;
+    /* fixed height for scroll */
+    overflow-y: auto;
+    overflow-x: auto;
+    /* enables vertical scrolling */
+    margin-top: 0;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(6, 14, 20, 0.18);
+    margin-bottom: 8px;
+}
+
+
+
+.ShowDetail-Btn{
+    display: flex;
+    width: 160px;
+    flex: 0 0 auto;
+}
+
+
+
+
+
+#noResultsRow td {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    background-color: #fff5f5;
+    padding: 10px;
+}
+
+.search-filter-container{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+.filter-SMD-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    gap: 5px;
+    font-weight: 500;
+}
+
+
+
+/* ✅ Style for Date and Message Input */
+
+
+
+
+
+
+
+
+
+.sender-info{
+    display: flex;
+    align-items: center;
+    width: 43%;
+    justify-content: space-between;
+}
+
+.line2 {
+    display: flex;
+    width: 2px;
+    height: 20px;
+    background: #ffffff;
+}
+/* ✅ Style for the span showing values (like NOCALL-5, March-2025) */
+.sender-info span {
+    font-weight: bold;
+    color: rgb(148, 248, 255);
+    /* Blue to highlight the info */
+}
+
+/* ✅ Style for labels like 'Sender' and 'Month' */
+.sender-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+/* ✅ Style for Sender and Month section */
+.sender-info {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* ✅ Wrapper to make the table scrollable */
+#tableWrapper {
+    max-height: 50vh;
+    /* Limit table height */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    overflow-x: auto;
+    /* Enable horizontal scrolling if needed */
+    margin-top: 20px;
+}
+
+#senderDetailsContent {
+    max-height: 400px;
+    /* Limit height for scroll */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    /* Optional: Add a border for clarity */
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    #safeReportModal .modal-content {
+        height: 100vh;
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #safeReportModal .title-modal {
+        gap: 8px;
+        align-items: center;
+    }
+
+    #safeReportModal .title {
+        font-size: 30px;
+        width: auto;
+    }
+
+    #safeReportModal .close-div {
+        padding-top: 22px;
+    }
+
+    #safeReportModal .scrollable-safe-report {
+        display: block;
+        flex: 1 1 auto;
+        width: 100%;
+        min-height: 0;
+        max-height: none;
+        margin-top: 0;
+        margin-bottom: 8px;
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+
+    #safeReportModal .div-box + .scrollable-safe-report {
+        margin-top: 10px;
+    }
+
+    #safeReportModal .div-box {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 12px;
+        height: auto;
+        margin-top: 14px;
+    }
+
+    #safeReportModal .div-box-sub {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        gap: 10px;
+        width: 100%;
+        height: auto !important;
+        min-height: 0;
+    }
+
+    #safeReportModal .div-box-sub .search-input {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    #safeReportModal .div-box-sub-SOS {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        height: auto !important;
+        min-height: 0;
+    }
+
+    #safeReportModal .search-input {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        min-height: 40px;
+        box-sizing: border-box;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    #safeReportSearchInput {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #safeReportModal .ShowDetail-Btn {
+        width: 132px;
+        flex: 0 0 132px;
+    }
+
+    #safeReportModal .ShowDetail-Btn button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #safeReportModal .print-Btn {
+        width: 100%;
+    }
+
+    #safeReportModal .print-Btn button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #safeReportModal .div-box-sub-SOS > div {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    #safeReportModal .div-box-sub-SOS label {
+        display: flex;
+        align-items: center;
+        min-width: 42px;
+        font-size: 14px;
+    }
+
+    #safeReportModal .div-box-sub-SOS .filter-group {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        box-sizing: border-box;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 10px;
+        border-radius: 12px;
+    }
+
+    #safeReportModal .yearInput,
+    #safeReportModal .dropdown {
+        width: 50%;
+        min-width: 0;
+        box-sizing: border-box;
+        font-size: 14px;
+        padding: 0;
+    }
+
+    #safeReportModal .styled-table {
+        min-width: 640px;
+    }
+
+    #safeReportModal .print-Btn {
+        margin-top: 0;
+        margin-bottom: 8px;
+        flex: 0 0 auto;
+    }
+}
+
+@media (max-width: 420px) {
+    #safeReportModal .div-box-sub {
+        flex-direction: column;
+    }
+
+    #safeReportModal .ShowDetail-Btn {
+        width: 100%;
+        flex: 1 1 auto;
+    }
+
+    #safeReportModal .div-box-sub-SOS > div {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    #safeReportModal .div-box-sub-SOS .filter-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #safeReportModal .yearInput,
+    #safeReportModal .dropdown {
+        width: 100%;
+    }
+}
+
